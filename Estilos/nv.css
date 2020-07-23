@@ -1,0 +1,263 @@
+/* shift + alt + a */
+/* Paleta de colores:
+claro: #B8ECD7
+mas oscuro: #083643
+limon: #B1E001
+limon claro: #CEF09D
+oscuro: #476C5E
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+}
+
+
+.header{
+    background: linear-gradient(to left, #10738f,#083643);
+    width: 100%;
+    height: 100px;
+    margin: 0;
+}
+.header img{
+    float: left;
+    padding-top: 34px;
+    padding-left: 50px;
+}
+.header h1{
+    font-size: 3em;
+    color: white;
+    text-align: justify;
+    float: left;
+    padding-top: 26px;
+    padding-left: 20px;
+    
+}
+.login ul{
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    text-align: justify;
+    float: right;
+    list-style: none;
+    display: flex;
+    padding-top: 50px;
+    padding-right: 20px;
+    
+}
+.login li a{
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+.login li a:hover{
+    color: #B1E001;
+}
+.nav_bar{
+    width: 100%;
+    height: 50px; 
+    background-color: #083643;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    position: sticky;
+    top:0;
+    z-index: 15;
+}
+.nav_bar ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.nav_bar li{
+    border-right: 1px solid white;
+    width: 16.666%;
+    height: 100%;
+}
+.nav_bar li a{
+    display: block;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding-top: 10px;
+    height: 100%;
+}
+.nav_bar li a:hover{
+    background-color:#219bbd;
+    color: #B1E001;
+}
+
+.mv-frikgaming{
+    width: 100%;
+    height: 450px;
+    background-image: url(/img/fondos/fondo-mv.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    border-bottom: 3px solid #10738f;
+}
+.mv-frikgaming h2{
+    font-size: 3em;
+    text-align: center;
+    padding-top: 50px;
+    
+    color: #B1E001;
+}
+.mv-frikgaming p{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 50px;
+    color: white;
+}
+
+
+
+/* Estilos de la seccion de juegos*/
+.seccion-mv{
+    width: 70%;
+    height: 3600px;
+    box-shadow: 2px 2px 5px #626262;
+    border-radius: 2px;
+    margin-bottom: 50px;
+}
+
+.card-game-mv{
+    width: 95%;
+    height: 700px;
+    margin: auto;
+    padding-top: 50px;
+}
+.card-game-mv .c-image{
+    width: 80%;
+    height: 400px;
+    margin: auto;
+}
+
+.card-game-mv .c-image .mv-video{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.card-game-mv #game-view{
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+#game-view h3{
+    color: #104352;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 10px;
+}
+#game-view p{
+    color: #10738f;
+    font-size: 1.2em;
+    text-align: justify;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+#game-view a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: #10738f;
+}
+
+#game-view a:hover{
+    background-color:#219bbd;
+    border: 2px solid #B1E001;
+    transition: 0.5s;
+}
+
+
+/* Estilos del pie de pagina */
+.pie-pag{
+    width: 100%;
+    height: 450px;
+    background: linear-gradient(to left, #10738f,#083643);
+}
+
+.pie-pag .sociales{
+    width: 90%;
+    height: 100px;
+    border-bottom: 2px white solid;
+    border-radius: 5px;
+    margin: auto;
+    
+    display: flex;
+}
+.sociales h4{
+    font-size: 1.4em;
+    text-align: left;
+    padding: 39px;
+    color: white;
+}
+.sociales img{
+    padding: 34px;
+}
+.sociales img:hover{
+    transform: scale(1.1);
+}
+.info-contacto{
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+    
+    display: flex;
+
+}
+.info-contacto .pie{
+    margin: auto;
+    height: 150px;
+}
+.pie h4{
+    padding-bottom: 20px;
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+}
+.pie p{
+    color: white;
+    font-size: 1em;
+    text-align: center;
+}
+.pie ul{
+    list-style: none;
+    font-size: 0.8em;
+    text-align: justify;
+    color: white;
+    margin: auto;
+}
+.pie a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+
+.copy{
+    width: 100%;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    border-top: white 2px solid;
+    border-radius: 5px;
+    margin-top: 50px;
+    padding-top: 5px;
+    
+}

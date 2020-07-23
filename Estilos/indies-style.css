@@ -1,0 +1,290 @@
+/* Estilos de hoja index */
+/* shift + alt + a */
+/* Paleta de colores:
+claro: #B8ECD7
+mas oscuro: #083643
+limon: #B1E001
+limon claro: #CEF09D
+oscuro: #476C5E
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;  
+}
+
+/* Estilos generales para header y navbar */
+.header{
+    background: linear-gradient(to left, #10738f,#083643); 
+    width: 100%;
+    height: 100px;
+    margin: 0; 
+}
+
+
+.header img{
+    float: left;
+    padding-top: 34px;
+    padding-left: 50px;
+}
+
+.header h1{
+    font-size: 3em;
+    color: white;
+    text-align: justify;
+    float: left;
+    padding-top: 26px;
+    padding-left: 20px;   
+}
+.login ul{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    text-align: justify;
+    float: right;
+    list-style: none;
+    display: flex;
+    padding-top: 50px;
+    padding-right: 20px;   
+    
+}
+
+.login li a{
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.login li a:hover{
+    color: #B1E001 ;
+}
+
+
+.nav_bar{
+    width: 100%;
+    height: 50px;
+    border: 1px white solid;
+    background-color: #083643;
+    position: sticky;
+    top:0;
+    z-index: 15;
+}
+
+.nav_bar ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex; 
+    height: 100%;  
+}
+.nav_bar li{
+    border-right: 1px solid white;
+    width: 16.66%;
+}
+.nav_bar li a{
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    text-decoration: none;
+    height: 100%;
+}
+
+.nav_bar li a:hover{
+    background-color:#219bbd;
+    color: #B1E001;
+}
+
+
+.inicio{
+    width: 100%;
+    height: 450px;
+    background-image: url(/img/celeste.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    border-bottom: 3px solid #10738f;
+    margin-bottom: 20px;
+}
+
+.inicio h2{
+    color: #B1E001;
+    font-size: 3em;
+    text-align: center;
+    padding-top: 50px;
+}
+.inicio p{
+    color: white;
+    font-size: 1.5em;
+    padding: 50px;
+    text-align: center;
+}
+
+
+.indies{
+    width: 70%;
+    height: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.carta-cont{
+    height: 300px;
+    width: 30%;
+    margin: auto;
+    -webkit-perspective: 700;
+    border-radius: 5px;
+}
+
+.carta-indies{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1.5s;
+
+}
+.carta-indies:hover{
+    transform: rotateY(180deg);
+}
+
+.lado{
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+}
+.frente{
+    width: 100%;
+    height: 100%;
+}
+.frente img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.atras{
+    background-color:#219bbd;
+    transform: rotateY(180deg);
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.atras h3{
+    color: #B1E001;
+    font-size: 1.8em;
+    
+    padding-top: 10px;
+}
+.atras p{
+    color: white;
+    font-size: 1em;
+    padding: 10px;  
+    margin-bottom: 10px;
+}
+.atras a{
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color:#B1E001;
+    border-radius: 5px;
+    color: white;
+}
+
+.atras a:hover{
+    border: 1px solid white;
+}
+
+
+
+
+
+/* Estilos del pie de pagina */
+.pie-pag{
+    width: 100%;
+    height: 450px;
+    background: linear-gradient(to left, #10738f,#083643);
+}
+
+.pie-pag .sociales{
+    width: 90%;
+    height: 100px;
+    border-bottom: 2px white solid;
+    border-radius: 5px;
+    margin: auto;
+    
+    display: flex;
+}
+.sociales h4{
+    font-size: 1.4em;
+    text-align: left;
+    padding: 39px;
+    color: white;
+}
+.sociales img{
+    padding: 34px;
+}
+.sociales img:hover{
+    transform: scale(1.1);
+}
+.info-contacto{
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+    
+    display: flex;
+
+}
+.info-contacto .pie{
+    margin: auto;
+    height: 150px;
+}
+.pie h4{
+    padding-bottom: 20px;
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+}
+.pie p{
+    color: white;
+    font-size: 1em;
+    text-align: center;
+}
+.pie ul{
+    list-style: none;
+    font-size: 0.8em;
+    text-align: justify;
+    color: white;
+    margin: auto;
+}
+.pie a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+
+.copy{
+    width: 100%;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    border-top: white 2px solid;
+    border-radius: 5px;
+    margin-top: 50px;
+    padding-top: 5px;
+    
+}
+
+
+

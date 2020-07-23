@@ -1,0 +1,320 @@
+
+/* shift + alt + a */
+/* Paleta de colores:
+claro: #B8ECD7
+mas oscuro: #083643
+limon: #B1E001
+limon claro: #CEF09D
+oscuro: #476C5E
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Oswald', sans-serif;  
+}
+
+
+.header{
+    background: linear-gradient(to left, #10738f,#083643);
+    
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    
+    border-bottom: 3px #B8ECD7  solid;
+}
+
+
+.header img{
+    float: left;
+    padding-top: 34px;
+    padding-left: 50px;
+}
+
+.header h1{
+    font-size: 3em;
+    color: white;
+    text-align: justify;
+    float: left;
+    padding-top: 26px;
+    padding-left: 20px;
+    
+}
+.login ul{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    text-align: justify;
+    float: right;
+    list-style: none;
+    display: flex;
+    padding-top: 50px;
+    padding-right: 20px;
+    
+}
+
+
+.login li a{
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.login li a:hover{
+    color: #B1E001;
+}
+
+/* Diseño del banner */
+
+.banner{
+    width: 100%;
+    height: 450px;
+    background-image: url(img/rdr2.jpg);
+    background-size: cover
+    ;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+
+    animation-name: banner;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes banner{
+    0%, 30%{
+        background-image: url(../img/minecraft.jpg);
+
+    }
+    35%, 65%{
+        background-image: url(../img/cod.jpg);
+    }
+    70%, 100%{
+        background-image: url(../img/rdr2.jpg);
+    }
+}
+
+
+
+
+.nav_bar{
+    width: 100%;
+    height: 50px;
+    border: 1px white solid;
+    background-color: #083643;
+    margin-top: 1px;
+    position: sticky;
+    top:0;
+    z-index: 15;
+
+}
+.nav_bar ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    height: 100%;
+}
+.nav_bar li{
+    border-right: 1px solid white;
+    width: 16.66%;
+    height: 100%;
+}
+.nav_bar li a{
+    display: block;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding-top: 10px;
+    height: 100%;
+}
+.nav_bar li a:hover{
+    background-color:#219bbd;
+    color: #B1E001;
+}
+
+
+
+.Inicio{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(to right, #B8ECD7, white);
+    
+}
+
+.Inicio h2{
+    font-size: 2.5em;
+    text-align: center;
+    padding-top: 50px;
+    
+    color: #B1E001;
+}
+
+.Inicio p{
+    font-size: 1.5em;
+    text-align: center;
+    padding: 50px;
+
+}
+
+#img_inicio{
+    display: block;
+    margin: auto;
+    filter: drop-shadow(0 0 5px black);
+}
+
+.reciente{
+    width: 100%;
+    height: 550px;
+    
+    
+}
+
+.reciente h2{
+    font-size: 2.5em;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    color: #B1E001;
+}
+
+.noticias{
+width: 90%;
+height: 400px;
+display: flex;
+flex-wrap: wrap;
+margin: auto;
+border: 1px solid white;
+border-radius: 20px;
+background:linear-gradient(to bottom, #083643, #11657c);
+box-shadow: 2px 2px 10px black;
+}
+.noticias .carta{
+width: 30%;
+height: 150px;
+display: flex;
+margin: auto;
+background: linear-gradient(to right,  rgb(162, 209, 190),  rgb(202, 255, 234));
+border-radius: 10px;
+box-shadow: 2px  2px 5px #607c71 ;
+}
+
+.noticias .carta:hover{
+    transform: scale(1.06);
+}
+.carta a{
+    width: 50%;
+    height: 100%;
+}
+
+.carta img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+
+}
+
+
+.carta .carta-info{
+    width: 50%;
+    height: 100%;
+    
+}
+
+.carta-info h3{
+    font-size: 1.2em;
+    text-align: center;
+    padding: 10px;
+    color:#B1E001;
+}
+.carta-info p{
+    font-size: 0.8em;
+    text-align: center;
+    padding: 2px;
+}
+
+
+.pie-pag{
+    width: 100%;
+    height: 450px;
+    margin-top: 200px;
+    
+    background: linear-gradient(to left, #10738f,#083643);
+}
+
+.pie-pag .sociales{
+    width: 90%;
+    height: 100px;
+    border-bottom: 2px white solid;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+}
+.sociales h4{
+    font-size: 1.4em;
+    text-align: left;
+    padding: 39px;
+    color: white;
+}
+.sociales img{
+    padding: 34px;
+}
+.sociales img:hover{
+    transform: scale(1.1);
+}
+
+.info-contacto{
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+    
+    display: flex;
+
+}
+.info-contacto .pie{
+    margin: auto;
+    height: 150px;
+}
+.pie h4{
+    padding-bottom: 20px;
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+}
+.pie p{
+    color: white;
+    font-size: 1em;
+    text-align: center;
+}
+.pie ul{
+    list-style: none;
+    font-size: 0.8em;
+    text-align: justify;
+    color: white;
+    margin: auto;
+}
+.pie a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+
+.copy{
+    width: 100%;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    border-top: white 2px solid;
+    border-radius: 5px;
+    margin-top: 50px;
+    padding-top: 5px;
+    
+}

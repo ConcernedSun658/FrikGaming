@@ -1,0 +1,236 @@
+
+/* shift + alt + a */
+/* Paleta de colores:
+claro: #B8ECD7
+mas oscuro: #083643
+limon: #B1E001
+limon claro: #CEF09D
+oscuro: #476C5E
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Oswald', sans-serif;  
+    background-color: whitesmoke;
+}
+
+.header{
+    background: linear-gradient(to left, #10738f,#083643);
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    
+    
+}
+
+
+.header img{
+    float: left;
+    padding-top: 34px;
+    padding-left: 50px;
+}
+
+.header h1{
+    font-size: 3em;
+    color: white;
+    text-align: justify;
+    float: left;
+    padding-top: 26px;
+    padding-left: 20px;
+    
+}
+.login ul{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    text-align: justify;
+    float: right;
+    list-style: none;
+    display: flex;
+    padding-top: 50px;
+    padding-right: 20px;
+    
+}
+
+
+.login li a{
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.login li a:hover{
+    color: #B1E001;
+}
+
+
+
+.nav_bar{
+    width: 100%;
+    height: 50px;
+    border: 1px white solid;
+    background-color: #083643;
+    margin-top: 1px;
+    position: sticky;
+    top:0;
+    z-index: 15;
+    
+    
+
+}
+.nav_bar ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    height: 100%;
+    
+}
+.nav_bar li{
+    border-right: 1px solid white;
+    width: 16.66%;
+    
+}
+.nav_bar li a:hover{
+    background-color:#219bbd;
+    color: #B1E001;
+}
+.nav_bar li a{
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    text-decoration: none;
+    height: 100%;
+}
+
+
+.categories{
+    width: 90%;
+    height: 250px;
+    margin: auto;
+    margin-bottom: 100px;
+    background-color: white;
+    margin-top: 100px;
+    border-radius: 5px;
+    border: 2px solid #10738f;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.16), 0px 2px 10px rgba(0,0,0,0.12);
+}
+.categories .title-categories{
+    width: 100%;
+    height: 50px;
+}
+.categories .title-categories h1{
+    font-size: 2em;
+    text-align: center;
+    color: #B1E001;
+    padding-top: 5px;
+}
+.categories .buttons-categories{
+    width: 90%;
+    height: 150px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.categories .buttons-categories button{
+    width: 30%;
+    height: 60px;
+    margin: auto;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: #10738f;
+    color: white;
+    border-radius: 5px;
+}
+.buttons-categories button:hover{
+    background-color: #219bbd;
+    color:#B1E001;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 2px #B1E001);
+}
+
+.noticias{
+    width: 100%;
+    height: 2000px;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.16), 0px 2px 10px rgba(0,0,0,0.12);
+
+}
+
+.noticias .news-container{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5px;
+    background-color: whitesmoke;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.16), 0px 2px 10px rgba(0,0,0,0.12);
+}
+
+.news-container #card-news{
+    width: 90%;
+    height: 150px;
+    display: flex;
+    margin: auto;
+    margin-top: 5px;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.16), 0px 2px 10px rgba(0,0,0,0.12);
+}
+
+#card-news .img-card{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card-news .img-card img{
+    width: 80%;
+    height: 90%;
+    border-radius: 50%;
+    border: 2px solid #B1E001 ;
+    filter: drop-shadow(0 0 5px black);
+}
+
+#card-news .description-card{
+    width: 80%;
+    height: 100%;
+    text-align: center;
+}
+
+#card-news .description-card h2{
+    font-size: 1.8em;
+    color: #10738f;
+    text-align: center;
+    padding-top: 5px;
+}
+#card-news .description-card p{
+    font-size: 1em;
+    text-align: center;
+    padding-top: 5px;
+    margin-bottom: 20px;
+}
+#card-news .description-card a{
+    text-decoration: none;
+    color: white;
+    background-color: #219bbd;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+#card-news .description-card a:hover{
+    color: #B1E001;
+    filter: drop-shadow(0 0 2px #B1E001);
+}
